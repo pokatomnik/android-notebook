@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pokatomnik.tk.notebook_singleton">
     
-    <uses-permission android:name="IO"
-    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

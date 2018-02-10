@@ -74,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
-            return true;
+            this.deleteFile("data.dat");
+            DataStore.getInstance().getNotes().clear();
+            noteRecordAdapter.notifyDataSetChanged();
         }
 
         return super.onOptionsItemSelected(item);
