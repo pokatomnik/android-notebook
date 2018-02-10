@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_weight="1"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingStart="@dimen/padding_list_item"
+        android:paddingLeft="@dimen/padding_list_item"
+        android:paddingRight="@dimen/padding_list_item"
+        android:paddingEnd="@dimen/padding_list_item">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/text_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@+id/title_text"
+            android:singleLine="true"
+            android:maxLines="1" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/remove_item_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/delete_icon"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        tools:layout_editor_absoluteX="340dp" />
+
+</LinearLayout>
